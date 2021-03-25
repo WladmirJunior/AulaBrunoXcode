@@ -11,6 +11,12 @@ struct Item {
     var imageIcon: UIImage
     var title: String
     var clickIcon: UIImage
+    var descricao: String
+}
+
+struct Login {
+    let user: String
+    let senha: String
 }
 
 class ViewController: UIViewController {
@@ -18,16 +24,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayItens: [Item] = [Item(imageIcon: .actions,
                                    title: "Ajuda",
-                                   clickIcon: .strokedCheckmark),
+                                   clickIcon: .strokedCheckmark, descricao: "Texto"),
                               Item(imageIcon: .remove,
                                    title: "Telefone",
-                                   clickIcon: .strokedCheckmark),
+                                   clickIcon: .strokedCheckmark, descricao: "Texto"),
                               Item(imageIcon: .add,
                                    title: "Internet",
-                                   clickIcon: .strokedCheckmark),
+                                   clickIcon: .strokedCheckmark, descricao: "Texto"),
                               Item(imageIcon: .checkmark,
                                    title: "Configurações",
-                                   clickIcon: .strokedCheckmark)
+                                   clickIcon: .strokedCheckmark, descricao: "Texto")
     ]
 
     public var count = 1
@@ -35,6 +41,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let login = sender as! Item
+        let viewControllerDestino = segue.destination as! DetailViewController
+        viewControllerDestino.dadosItem = login
     }
 }
 
@@ -54,6 +67,17 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension ViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let item = arrayItens[indexPath.row]
+        performSegue(withIdentifier: "segueDetail", sender: item)
+    }
+}
+
+
 
 
 // MARK: - Métodos de Teste
