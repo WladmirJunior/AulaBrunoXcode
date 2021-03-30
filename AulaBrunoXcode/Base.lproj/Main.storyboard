@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cib-KU-4C7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XIq-Nh-Asl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -104,6 +104,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-997" y="157"/>
+        </scene>
+        <!--Dog View Controller-->
+        <scene sceneID="dG4-IC-Gwv">
+            <objects>
+                <viewController id="XIq-Nh-Asl" customClass="DogViewController" customModule="AulaBrunoXcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDL-7K-k3N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s3w-Uh-xYB">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="0ih-H4-80e"/>
+                                    <constraint firstAttribute="height" constant="350" id="Nwh-yG-ghc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cOt-3a-jMl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s3w-Uh-xYB" firstAttribute="centerY" secondItem="BDL-7K-k3N" secondAttribute="centerY" id="bZS-vZ-7bC"/>
+                            <constraint firstItem="s3w-Uh-xYB" firstAttribute="centerX" secondItem="BDL-7K-k3N" secondAttribute="centerX" id="e4l-ar-M6q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dogImage" destination="s3w-Uh-xYB" id="Cc6-Qt-WU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNs-Al-jWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511.59420289855075" y="-723.21428571428567"/>
         </scene>
         <!--Detalhe-->
         <scene sceneID="N8e-6M-sbk">

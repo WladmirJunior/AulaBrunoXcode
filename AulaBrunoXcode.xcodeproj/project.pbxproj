@@ -18,6 +18,7 @@
 		E4C2CFA725E91470004F0FE5 /* AulaBrunoXcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2CFA625E91470004F0FE5 /* AulaBrunoXcodeTests.swift */; };
 		E4C2CFB225E91470004F0FE5 /* AulaBrunoXcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2CFB125E91470004F0FE5 /* AulaBrunoXcodeUITests.swift */; };
 		E4C2CFC325E91DD7004F0FE5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2CFC225E91DD7004F0FE5 /* TableViewController.swift */; };
+		E4F9ADF42613CDA30095AA79 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9ADF32613CDA30095AA79 /* DogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E4C2CFB125E91470004F0FE5 /* AulaBrunoXcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AulaBrunoXcodeUITests.swift; sourceTree = "<group>"; };
 		E4C2CFB325E91470004F0FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C2CFC225E91DD7004F0FE5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E4F9ADF32613CDA30095AA79 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				E4C2CFC225E91DD7004F0FE5 /* TableViewController.swift */,
 				E4BFE78225F100CD000ACBC4 /* MyCell.swift */,
 				E42EBC38260CB84700DE4A58 /* DetailViewController.swift */,
+				E4F9ADF32613CDA30095AA79 /* DogViewController.swift */,
 			);
 			path = AulaBrunoXcode;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				E42EBC39260CB84700DE4A58 /* DetailViewController.swift in Sources */,
 				E4C2CF9225E9146C004F0FE5 /* SceneDelegate.swift in Sources */,
 				E4C2CFC325E91DD7004F0FE5 /* TableViewController.swift in Sources */,
+				E4F9ADF42613CDA30095AA79 /* DogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
